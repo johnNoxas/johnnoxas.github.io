@@ -58,6 +58,6 @@
         console.log( "ready!" );
         $('#waypoint').waypoint(function() {
             console.log( "ready!" );
-        }, {context:"body"});
+        }, {context: $("#content")});
     });
 
