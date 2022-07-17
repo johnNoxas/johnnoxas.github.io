@@ -52,13 +52,12 @@
       $('#image-slider').find('.owl-next').html('<i class="fa fa-angle-right"></i>');
 
 
-    $('#counter').waypoint(function(direction) {
-        $('.count-value').addClass('timer');
-        $('.timer').countTo();
-        alert('on');
-    }, {
-        offset: '100%',
-        triggerOnce: false
+
+
+    $( document ).ready(function() {
+        console.log( "ready!" );
+        $('#waypoint').waypoint(function() {
+            console.log( "ready!" );
+        }, {context:"body"});
     });
 
-    $('.timer').countTo();
