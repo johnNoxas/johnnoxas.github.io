@@ -33,7 +33,7 @@
 
       $('#posts-carousel-3col').owlCarousel({
         navigation : true,
-        pagination: false,
+        pagination: true,
         items : 3,
         itemsDesktop : [1199,3],
         itemsDesktopSmall : [979,3]
@@ -50,3 +50,15 @@
       });   
       $('#image-slider').find('.owl-prev').html('<i class="fa fa-angle-left"></i>');
       $('#image-slider').find('.owl-next').html('<i class="fa fa-angle-right"></i>');
+
+
+    $('#counter').waypoint(function(direction) {
+        $('.count-value').addClass('timer');
+        $('.timer').countTo();
+        alert('on');
+    }, {
+        offset: '100%',
+        triggerOnce: false
+    });
+
+    $('.timer').countTo();

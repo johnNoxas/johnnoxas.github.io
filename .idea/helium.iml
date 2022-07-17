@@ -7,5 +7,26 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v13.0.6, ruby-3.1.2-p20) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubygems-update (v3.3.16, ruby-3.1.2-p20) [gem]" level="application" />
+  </component>
+  <component name="RakeTasksCache">
+    <option name="myRootTask">
+      <RakeTaskImpl id="rake">
+        <subtasks>
+          <RakeTaskImpl description="Create a new page" fullCommand="page" id="page" />
+          <RakeTaskImpl description="Begin a new post in ./_posts" fullCommand="post" id="post" />
+          <RakeTaskImpl description="Launch preview environment" fullCommand="preview" id="preview" />
+          <RakeTaskImpl id="theme">
+            <subtasks>
+              <RakeTaskImpl description="Install theme" fullCommand="theme:install" id="install" />
+              <RakeTaskImpl description="Package theme" fullCommand="theme:package" id="package" />
+              <RakeTaskImpl description="Switch between Jekyll-bootstrap themes" fullCommand="theme:switch" id="switch" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="" fullCommand="switch_theme" id="switch_theme" />
+        </subtasks>
+      </RakeTaskImpl>
+    </option>
   </component>
 </module>
