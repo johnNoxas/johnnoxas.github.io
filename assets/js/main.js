@@ -56,8 +56,13 @@
 
     $( document ).ready(function() {
         console.log( "ready!" );
-        $('#waypoint').waypoint(function() {
-            console.log( "ready!" );
-        }, {context: $("#content")});
+        $('#waypoint').waypoint({
+            handler: function() {
+                console.log( "ready!" );
+            },
+            offset: '0px'
+        });
     });
+
+    $('body').on('scroll', function(){Waypoint.refreshAll();});
 
