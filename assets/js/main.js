@@ -1,5 +1,5 @@
-    
-    $('#single-testimonial-item').owlCarousel({     
+
+    $('#single-testimonial-item').owlCarousel({
         items : 1,
         navigation : true,
         pagination: false,
@@ -52,13 +52,11 @@
       $('#image-slider').find('.owl-next').html('<i class="fa fa-angle-right"></i>');
 
 
-
-
     $( document ).ready(function() {
         console.log( "ready!" );
         $('#waypoint').waypoint({
             handler: function() {
-                console.log( "ready!" );
+                console.log( "waypoint!" );
             },
             offset: '0px'
         });
