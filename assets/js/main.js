@@ -51,16 +51,15 @@
       $('#image-slider').find('.owl-prev').html('<i class="fa fa-angle-left"></i>');
       $('#image-slider').find('.owl-next').html('<i class="fa fa-angle-right"></i>');
 
-
+    // Make counters restart on slide
     $( document ).ready(function() {
-        console.log( "ready!" );
-        $('#waypoint').waypoint({
+        $('.timer').waypoint({
             handler: function() {
-                console.log( "waypoint!" );
+                $(this.element).countTo('restart');
             },
-            offset: '0px'
+            offset: '100%',
+
         });
     });
-
     $('body').on('scroll', function(){Waypoint.refreshAll();});
 
