@@ -51,6 +51,8 @@
       $('#image-slider').find('.owl-prev').html('<i class="fa fa-angle-left"></i>');
       $('#image-slider').find('.owl-next').html('<i class="fa fa-angle-right"></i>');
 
+      // Waypoint related things
+    
     // Make counters restart on slide
     $( document ).ready(function() {
         $('.timer').waypoint({
@@ -60,6 +62,17 @@
             offset: '100%',
 
         });
+        $('.animated').css('opacity', 0);
+        $('.animated').waypoint({
+          handler: function() {
+              $(this.element).addClass(this.element.dataset.animation);
+          },
+          offset: '50%',
+
+      });
     });
+
+    
+
     $('body').on('scroll', function(){Waypoint.refreshAll();});
 
