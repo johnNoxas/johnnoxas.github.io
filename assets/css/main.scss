@@ -1,40 +1,21 @@
 ---
 ---
 
-@import '_vars';
+@import 'animate';
+@import 'bootstrap/bootstrap';
+@import 'jasny-bootstrap.min';
+@import 'maps';
+@import 'owl.carousel';
+@import 'owl.theme';
+@import 'responsive';
+@import 'scrolling-nav';
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,700|Montserrat:700");
 
 h1, h2, h3, h4, h5, h6 {
     color: $text-default;
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    letter-spacing: 0px;
-    margin-top: 0;
 }
 
-h1 {
-    font-size: 36px;
-} 
-
-h2 {
-    font-size: 30px;
-} 
-
-h3 {
-    font-size: 26px;
-} 
-
-h4 {
-    font-size: 22px;
-} 
-
-h5 {
-    font-size: 18px;
-} 
-
-h6 {
-    font-size: 16px;
-} 
 
 a {
     color: $primary;
@@ -56,25 +37,18 @@ a:focus {
 
 p {
     font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
     color: $text-default;
-    letter-spacing: 0px;
-    margin-bottom: 10px;
 } 
 
-ul,
-li {
-    list-style: none;
-    padding: 0;
-} 
+ul,li {
+    list-style:none;
+    padding:0
+}
 
-ul,
-ol {
-    list-style: none;
-    padding: 0;
-} 
+ul,ol {
+    list-style:none;
+    padding:0
+}
 
 .orderlist li {
     list-style: block;
@@ -139,10 +113,6 @@ blockquote p {
 
 strong {
     font-weight: 700;
-} 
-
-.lead {
-    font-size: 16px;
 } 
 
 .text-left {
@@ -275,6 +245,34 @@ strong {
     color: #fff;
 } 
 
+#header {
+    background-image: url(/assets/images/bg/hero-1-bg.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: contain;
+}
+
+#header .content{
+    height:100vh;
+    display: flex;
+    align-items: center;
+}
+
+#header .header-title {
+    color: #fff;
+} 
+
+#header .header-text {
+    color: #fff;
+    line-height: 1.5;
+} 
+
+#header p.caption {
+    padding: 6px;
+    color: $text-default;
+} 
+
 #headers .navbar {
     margin-bottom: 0;
 } 
@@ -316,6 +314,7 @@ strong {
     -moz-background-size: cover;
     background-size: cover;
     background-position: contain;
+    
 } 
 
 #header-style-1 .header-title {
@@ -360,12 +359,6 @@ strong {
     margin-bottom: 25px;
 } 
 
-.hero-content-v2 p {
-    color: $text-default;
-    font-size: 18px;
-    margin-bottom: 45px;
-} 
-
 .header-style-3 {
     background: url(/assets/images/bg/hero-3-bg.jpg) no-repeat left center;
     background-size: cover;
@@ -383,6 +376,14 @@ strong {
 .section {
     padding: 30px 0;
 } 
+
+.section-title {
+    font-size: 28px;
+}
+
+.section-lead {
+    font-size: 18px;
+}
 
 .footer-info {
     padding: 25px 0;
@@ -4491,10 +4492,6 @@ body {
     color: $text-default;
     background: #fff;
     font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0px;
 } 
 
 html,
